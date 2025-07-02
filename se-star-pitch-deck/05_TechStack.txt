@@ -1,5 +1,0 @@
-- Ethereum + Hardhat
-- Firebase (2FA, notifications)
-- AI risk scoring engine
-- React + Vercel frontend
-- Smart contract ecosystem
