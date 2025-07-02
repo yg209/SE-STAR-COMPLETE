@@ -1,0 +1,14 @@
+
+SE-STAR Pitch Deck Outline
+1. Cover Slide – Logo, Tagline, Mascot
+2. Problem – Web3 scams, billions lost
+3. Solution – AI + Escrow + TrustWall
+4. Product Features – Wallet flagging, NFT badges
+5. Tech Stack – Ethereum, Hardhat, Firebase
+6. Tokenomics – $SST breakdown pie chart
+7. Market Fit – Wallets, exchanges, governments
+8. Traction – MVP deployed, Firebase live
+9. Team & Mascot – SE-STAR Doberman
+10. Ask – $150K seed
+11. Roadmap – Q2–Q4 goals
+12. Contact & CTA – Site + presale link

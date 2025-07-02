@@ -1,0 +1,4 @@
+- Smart contracts deployed
+- Vercel frontend live
+- Whitepaper & docs ready
+- Security integrations underway

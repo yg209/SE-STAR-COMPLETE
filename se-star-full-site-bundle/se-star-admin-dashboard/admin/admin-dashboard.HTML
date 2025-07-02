@@ -1,0 +1,120 @@
+<!-- Section: Wallet Watchdog Overview -->
+<section id="wallet-watchdog" class="dashboard-section">
+  <h2>Wallet Watchdog</h2>
+  <p>Enable address tracking for suspicious behavior, color-coded by trust score.</p>
+
+  <!-- User Input for Address Lookup -->
+  <form id="addressLookupForm">
+    <input type="text" id="walletAddress" placeholder="Enter Wallet Address" required />
+    <button type="submit">Analyze Wallet</button>
+  </form>
+
+  <!-- Analysis Results -->
+  <div id="watchdogResult" class="result-container hidden">
+    <h3>Address Analysis:</h3>
+    <ul>
+      <li><strong>Status:</strong> <span id="walletStatus">-</span></li>
+      <li><strong>Trust Score:</strong> <span id="trustScore">-</span></li>
+      <li><strong>Risk Color:</strong> <span id="riskColor">-</span></li>
+      <li><strong>Recent Activity:</strong> <span id="recentActivity">-</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Section: Real-Time Blockchain TX Monitor -->
+<section id="realtime-monitor" class="dashboard-section">
+  <h2>Live Blockchain Monitor</h2>
+  <p>Track TX confirmations and blockchain interaction validity (SafeCheck).</p>
+
+  <!-- Trigger Check -->
+  <form id="txCheckForm">
+    <input type="text" id="txHash" placeholder="Paste Transaction Hash" required />
+    <button type="submit">Verify TX</button>
+  </form>
+
+  <!-- TX Result Panel -->
+  <div id="txResult" class="result-container hidden">
+    <section class="dashboard-section">
+  <h2>🎁 Token Control Panel & Airdrop Manager</h2>
+
+  <form id="airdropForm">
+    <label for="recipient">Recipient Wallet:</label>
+    <input type="text" id="recipient" placeholder="0x..." required>
+
+    <label for="amount">Amount of SST Tokens:</label>
+    <input type="number" id="amount" min="1" required>
+
+    <button type="submit">Send Airdrop</button>
+  </form>
+
+  <div id="airdropResult" class="result-container hidden"></div>
+
+  <hr>
+
+  <h3>🚀 Manual Token Transfer</h3>
+  <form id="manualTransferForm">
+    <label for="to">Send to:</label>
+    <input type="text" id="to" placeholder="0x..." required>
+
+    <label for="transferAmount">Amount:</label>
+    <input type="number" id="transferAmount" min="1" required>
+
+    <button type="submit">Transfer SST</button>
+  </form>
+
+  <div id="transferResult" class="result-container hidden"></div>
+</section>
+    <h3>Transaction Status</h3>
+    <ul>
+      <li><strong>On-Chain:</strong> <span id="onChainStatus">-</span></li>
+      <li><strong>Block Number:</strong> <span id="blockNumber">-</span></li>
+      <li><strong>Sender:</strong> <span id="txSender">-</span></li>
+      <li><strong>Receiver:</strong> <span id="txReceiver">-</span></li>
+      <li><strong>Gas Used:</strong> <span id="gasUsed">-</span></li>
+      <li><strong>Final Signature:</strong> <span id="finalSig">-</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Section: Script Hooking -->
+<script>
+  // PARTIAL SCRIPT for Wallet Watchdog analysis
+  document.getElementById('addressLookupForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const address = document.getElementById('walletAddress').value;
+    document.getElementById('walletStatus').textContent = 'Checking...';
+    <section class="dashboard-section">
+  <h2>📊 Analytics & Platform Reports</h2>
+
+  <div class="analytics-grid">
+    <div class="analytics-card">
+      <h3>Total SST Transfers</h3>
+      <p id="totalTransfers">Loading...</p>
+    </div>
+    <div class="analytics-card">
+      <h3>Flagged Wallets</h3>
+      <p id="flaggedWallets">Loading...</p>
+    </div>
+    <div class="analytics-card">
+      <h3>Platform Signups</h3>
+      <p id="totalUsers">Loading...</p>
+    </div>
+    <div class="analytics-card">
+      <h3>AI Risk Checks Run</h3>
+      <p id="aiChecks">Loading...</p>
+    </div>
+  </div>
+
+  <button onclick="exportCSV()">📁 Export Full Report</button>
+</section>
+
+    // Simulated fetch logic (replace with backend call or AI integration)
+    setTimeout(() => {
+      document.getElementById('walletStatus').textContent = 'Scam Flagged';
+      document.getElementById('trustScore').textContent = '12%';
+      document.getElementById('riskColor').textContent = 'Red';
+      document.getElementById('recentActivity').textContent = 'Spam Airdrops, Dusting';
+      document.getElementById('watchdogResult').classList.remove('hidden');
+    }, 1500);
+  });
+</script>

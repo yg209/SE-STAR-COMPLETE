@@ -1,0 +1,58 @@
+.dashboard-section {
+  border: 1px solid #ccc;
+  background: #f9fbfd;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+.result-container {
+  margin-top: 15px;
+  display: none;
+}
+.result-container ul {
+  list-style: none;
+  padding: 0;
+}
+.hidden {
+  display: none;
+  input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background-color: #0074cc;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #005da3;
+}
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.analytics-card {
+  background-color: #112233;
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.analytics-card h3 {
+  margin: 0;
+  font-size: 1.1em;
+}
+}
