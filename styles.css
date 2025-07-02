@@ -1,0 +1,30 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  color: #222;
+}
+header {
+  background: #0074d9;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+main {
+  padding: 40px;
+}
+.cta {
+  display: inline-block;
+  background: #2ecc40;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+footer {
+  background: #001f3f;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
